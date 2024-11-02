@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Survival-1.0-1.17.1">
+    <output-path>$PROJECT_DIR$/../Server/ZombieApocalpse/plugins</output-path>
+    <root id="archive" name="Survival-1.0-1.17.1.jar">
+      <element id="module-output" name="ZombieSurvival.main" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

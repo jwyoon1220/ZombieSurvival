@@ -1,0 +1,8 @@
+name: Survival
+main: io.jwyoon1220.survival.plugin.SurvivalPlugin
+version: 1.0
+api-version: 1.17
+libraries:
+  - io.github.monun:tap-core:4.6.1
+  - io.github.monun:kommand-core:3.1.7
+  - io.github.R2turnTrue:chzzk4j:0.0.10
