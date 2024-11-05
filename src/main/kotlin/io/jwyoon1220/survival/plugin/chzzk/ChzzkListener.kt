@@ -18,7 +18,7 @@ class ChzzkListener(javaPlugin: JavaPlugin) : ChatEventListener {
 
     override fun onConnect(chat: ChzzkChat, isReconnecting: Boolean) {
         plugin.logger.info("재연결됨.")
-        chat.connectAsync()
+       
         // !! when re-connecting, you shouldn't need to request recent chats!
         if (!isReconnecting) chat.requestRecentChat(50)
     }
