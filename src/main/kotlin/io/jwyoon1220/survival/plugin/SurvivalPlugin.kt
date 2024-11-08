@@ -20,10 +20,10 @@ import java.util.*
 
 class SurvivalPlugin : JavaPlugin() {
 
-    private val NID_AUT = "4VqdjJ93CAMj7us43t8A6OKxZhicR3oD+OB5rWQetxqbv+4f0Z2yDp8T40Rhvqvj"
-    private val NID_SES = "AAABrc7auK+VYIEhZaHnmlLS58DEFmMZktTquglaoBqPRAwX0SQyR0g51qg2GfTUeSj2stN1vUgZMhKVuRi5mxmGSHJjs9koftJK6zrKsSAFVNgA1WRllyfqZNKF5GGNDyjxBD4WDWUJqftphSyfhC8hMXoS+LwJvBDCVSS+hbCXzY5bElq/hvn1T773ekMBm+KVOduqSvBfedD57LGmMKenRJRmsfYDo3K+7qSd21fCVgXywzEuvUb9IuUXv5NcmbDLmPXUPHb5OL3mQgP6QKOTFZ9rsuN387CGR4SzRYEpHz/PTj/CJ1opPsISf6yFWrZVafTO+AnT4Zdurwcy6gZ+SMK/C7hshEQP3wEhKvP3vtX+bdZZiUkpvKDJidFTGtF3HhxYtbhn0lV24JueP7QEMF6riTy6oPeYkcCt5HTTOBHiLzQKvNikel2niWNbHSXQsfRsb3kvGx0wPG3rLtaxW/d3JDzgz21rydP/nc6ZyP9vBv83RAEjVsMgYdh9KsqIVuauZOr65cCYZWla9fVoR9FH+FHCcvS2xh7+fpwuvhYyg8XlCTtusRA4NXp4uMkwCA=="
-    private val chzzk = ChzzkBuilder().build()
-    var chat = chzzk.chat("0ebf3aac04fc1d4e165cdfc43e38ce6a").withChatListener(ChzzkListener(this)).build()
+    private val NID_AUT = "YGue3cb4RiSLKfinJW0ZyZLiLErHecqaUb+D0f0pdhljhT/GJrCl4vpW9lb9TY/i"
+    private val NID_SES = "AAABjKkYuzomLXC7NVDDeGdTeye100FQ/E6fug6LFTjStjlLBhqWPJeWj2VEVfgY4xQ1GvMcsf8pm8qqwrFlQXiaC8bN3Pp+LWB6Fb9LSmxzrPj64zABkOcfcxZ6HkGCm6RAkcFe+m13UHZvXqOwQGVHQOyj3XakuB3p9MYIa5Xchxrs/maWKaazEb4p+4z1usU491P0ltVrzUM2qLjx5MRoz+c7ta+YQyK3WAAcOSZmgYoVh1aCGLLcMxZLs8YqTQ1Ouojk2BmNHw0puoeL5J6gN9zOznA58kvDJeOFA+rEBAzXzcFs0eS16axaRGhb/X1J3fo8G9BotfL54wfrglbC89cWvm52/lOeihOLB97qAI2dTIEswmKKP/bMyoc0F1A9oWHxELp1JAXrJ4iFopq0+hYF/wCruclo9siX0BeaDYQeirIYjknWMUBOYogH2ue3BpogqZTHzRiGTw/9hwQjhOsVoaaEa4Imjyaqu0KxtwTZE5F2wpiQil5BDrXkwMzP93uZR8zpKt4fteX67+RUB+A="
+    private val chzzk = ChzzkBuilder().withAuthorization(NID_AUT, NID_SES).build()
+    var chat = chzzk.chat("4d951e8a8538899f8f37aa80827fc4d5").withChatListener(ChzzkListener(this)).build()
 
 
     override fun onEnable() {
