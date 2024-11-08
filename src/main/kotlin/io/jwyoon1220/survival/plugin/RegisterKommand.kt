@@ -2,6 +2,7 @@ package io.jwyoon1220.survival.plugin
 
 import io.github.monun.kommand.getValue
 import io.github.monun.kommand.kommand
+import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
 import org.bukkit.Material
@@ -75,6 +76,15 @@ class RegisterKommand(javaPlugin: JavaPlugin, chat: ChzzkChat) {
                     meta.lore = listOf("백신이지만 치료제도 된다고 한다.", "뭔가 맛이 매우 없을거 같다.") // 아이템 설명
                     vaccineItem.itemMeta = meta
                     player.inventory.addItem(vaccineItem)
+                }
+            }
+            register("yangmung-pass") {
+                requires { isOp }
+                executes {
+                    player.performCommand("whitelist add ysdydys")
+                    player.performCommand("attach partner ysdydys")
+                    Bukkit.broadcast(Component.text("양뭉-패스가 등록되었습니다. 이제 양뭉은 서버에 들어올수 있습니다."))
+
                 }
             }
             /* 메시지 전송 기능, 하지만 NID 토큰 필요.
