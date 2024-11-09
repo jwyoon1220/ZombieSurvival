@@ -1,5 +1,6 @@
 package io.jwyoon1220.survival.plugin
 
+import io.github.monun.kommand.StringType
 import io.github.monun.kommand.getValue
 import io.github.monun.kommand.kommand
 import net.kyori.adventure.text.Component
@@ -87,7 +88,7 @@ class RegisterKommand(javaPlugin: JavaPlugin, chat: ChzzkChat) {
 
                 }
             }
-            /* 메시지 전송 기능, 하지만 NID 토큰 필요.
+            // 메시지 전송 기능, 하지만 NID 토큰 필요.
             register("send") {
                 requires { isOp }
                 then("msg" to string(StringType.GREEDY_PHRASE)) {
@@ -97,7 +98,7 @@ class RegisterKommand(javaPlugin: JavaPlugin, chat: ChzzkChat) {
                     }
                 }
             }
-             */
+
         }
     }
 }

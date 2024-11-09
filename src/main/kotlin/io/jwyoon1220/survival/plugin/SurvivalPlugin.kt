@@ -23,7 +23,7 @@ class SurvivalPlugin : JavaPlugin() {
     private val nidAUT = "/36x6nQEBNgaYBTPpVzUOsWEpTEKQmZBCdoXc6p8MLSFVDVD29S+KoKOolEyRmtz"
     private val nidSES = "AAABi029eZDMgXaZDp74Bd5FStxH3GnZRF8YgZDLaqdUHS4i6lIEanUB5YQ0biO4bsu4MA1yBW2A4U+ZGNA3bflzOD5rbHgH7TsmwlcGNTobJ5SaVInr08Si7Zz0XwXQT2ut+D2BecFHWJ1ZhuYKYqIfc8g/WctMrF6NzH8f0xgkHgvHefary8MF4hgNb4czgAdWlZ1L1eRrOlXrsaxdvl/eWAp8vUxjM4bRYoYTcj69I/RgNMirrXkxt4ZCJuttXOYM4fGp3XZB4zZ8rYFAR1Fjxo97cJ0o4SxGk9SWsKXHfNG2zzP92ImlJQKe5/AbcOxgCWPhlaCKJzfbuF8cxlZWe1to2Rq2OGYwrzYngHNdcJTLcMq73ycC0ufhGesD/wL+taSozrDNqCufcx8I8wHjKSk3sm96CvuUqeARBcWvGKYnjo+U8RY6tjpkU03V4Q8Tcq+H3+eHtT8pRSjY88EVv7/+T66JbqfjtfxDYH966Wc2/qFuO2IYOQB2StTl5Rfv9H33C2sZcivxn4iga0fizJg="
     private val chzzk = ChzzkBuilder().withAuthorization(nidAUT, nidSES).build()
-    var chat = chzzk.chat("e33ec48e6a567f2b993f3bb8b21f8834").withChatListener(ChzzkListener(this)).build()
+    var chat = chzzk.chat("4d951e8a8538899f8f37aa80827fc4d5").withChatListener(ChzzkListener(this)).build()
 
 
     override fun onEnable() {
