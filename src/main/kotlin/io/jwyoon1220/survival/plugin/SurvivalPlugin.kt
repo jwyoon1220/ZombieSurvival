@@ -34,7 +34,6 @@ class SurvivalPlugin : JavaPlugin() {
         server.setWhitelist(true)
         config.set("chzzk.msgc", 0)
         logger.info("치지직 접속중...")
-
         chat.connectAsync()
         logger.info("접속 성공")
 
