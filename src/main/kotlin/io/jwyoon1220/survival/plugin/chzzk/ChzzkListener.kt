@@ -11,6 +11,7 @@ import java.lang.IndexOutOfBoundsException
 
 class ChzzkListener(javaPlugin: JavaPlugin) : ChatEventListener {
     private val plugin = javaPlugin
+    // 이것도 가져다 쓰면 혼난다. 고소미 10박스 사줌.
     private val NID_AUT = "YGue3cb4RiSLKfinJW0ZyZLiLErHecqaUb+D0f0pdhljhT/GJrCl4vpW9lb9TY/i"
     private val NID_SES = "AAABjKkYuzomLXC7NVDDeGdTeye100FQ/E6fug6LFTjStjlLBhqWPJeWj2VEVfgY4xQ1GvMcsf8pm8qqwrFlQXiaC8bN3Pp+LWB6Fb9LSmxzrPj64zABkOcfcxZ6HkGCm6RAkcFe+m13UHZvXqOwQGVHQOyj3XakuB3p9MYIa5Xchxrs/maWKaazEb4p+4z1usU491P0ltVrzUM2qLjx5MRoz+c7ta+YQyK3WAAcOSZmgYoVh1aCGLLcMxZLs8YqTQ1Ouojk2BmNHw0puoeL5J6gN9zOznA58kvDJeOFA+rEBAzXzcFs0eS16axaRGhb/X1J3fo8G9BotfL54wfrglbC89cWvm52/lOeihOLB97qAI2dTIEswmKKP/bMyoc0F1A9oWHxELp1JAXrJ4iFopq0+hYF/wCruclo9siX0BeaDYQeirIYjknWMUBOYogH2ue3BpogqZTHzRiGTw/9hwQjhOsVoaaEa4Imjyaqu0KxtwTZE5F2wpiQil5BDrXkwMzP93uZR8zpKt4fteX67+RUB+A="
     private lateinit var chzzkchat: ChzzkChat
@@ -21,7 +22,6 @@ class ChzzkListener(javaPlugin: JavaPlugin) : ChatEventListener {
         chat.connectAsync()
         chzzkchat = chat
         // !! when re-connecting, you shouldn't need to request recent chats!
-        if (!isReconnecting) chat.requestRecentChat(50)
     }
 
     override fun onError(ex: Exception) {
@@ -45,10 +45,10 @@ class ChzzkListener(javaPlugin: JavaPlugin) : ChatEventListener {
                     Bukkit.broadcast(Component.text("${ex.javaClass}: "))
                 }
             })
-        } else {
-            //for (player in Bukkit.getOnlinePlayers()) {
-            //    player.sendActionBar("${msg.profile?.nickname}: ${msg.content}")
-            //}
+        } else if (msg.content.contains("!시참")) {
+            chzzkchat.sendChat("서버 주소: yangmung1.mcv.kr")
+            chzzkchat.sendChat("버전: 1.17.1")
         }
+
     }
 }
