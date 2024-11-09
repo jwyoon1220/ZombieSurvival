@@ -36,8 +36,7 @@ class SurvivalPlugin : JavaPlugin() {
         logger.info("치지직 접속중...")
         chat.connectAsync()
         logger.info("접속 성공")
-
-
+        server.maxPlayers = 50
 
         if (scoreboard.getTeam("player") == null) {
             pteam = scoreboard.registerNewTeam("player").apply {
@@ -56,7 +55,7 @@ class SurvivalPlugin : JavaPlugin() {
             zteam = scoreboard.getTeam("zombie")!!
         }
         addVaccineRecipe()
-        EventListener(this, zteam, pteam, )
+        EventListener(this, zteam, pteam)
         PlayerTracking(this)
         RegisterKommand(this, chat)
         saveDefaultConfig()
@@ -65,7 +64,6 @@ class SurvivalPlugin : JavaPlugin() {
             world.setGameRule(GameRule.REDUCED_DEBUG_INFO, true)
             world.difficulty = Difficulty.HARD
         }
-
     }
 
     override fun onDisable() {
