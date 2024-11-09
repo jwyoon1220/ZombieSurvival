@@ -19,7 +19,7 @@ import java.util.*
 
 class SurvivalPlugin : JavaPlugin() {
     // 이거 다른데다 갔다 쓰면 고소미 직접 가져다줌.
-    // 다른데다 쓰면 고소한다.
+    // 다른데다 쓰면 고소한다. 내 네이버 계정이다. 진짜 쓰면 고소할거임
     private val nidAUT = "/36x6nQEBNgaYBTPpVzUOsWEpTEKQmZBCdoXc6p8MLSFVDVD29S+KoKOolEyRmtz"
     private val nidSES = "AAABi029eZDMgXaZDp74Bd5FStxH3GnZRF8YgZDLaqdUHS4i6lIEanUB5YQ0biO4bsu4MA1yBW2A4U+ZGNA3bflzOD5rbHgH7TsmwlcGNTobJ5SaVInr08Si7Zz0XwXQT2ut+D2BecFHWJ1ZhuYKYqIfc8g/WctMrF6NzH8f0xgkHgvHefary8MF4hgNb4czgAdWlZ1L1eRrOlXrsaxdvl/eWAp8vUxjM4bRYoYTcj69I/RgNMirrXkxt4ZCJuttXOYM4fGp3XZB4zZ8rYFAR1Fjxo97cJ0o4SxGk9SWsKXHfNG2zzP92ImlJQKe5/AbcOxgCWPhlaCKJzfbuF8cxlZWe1to2Rq2OGYwrzYngHNdcJTLcMq73ycC0ufhGesD/wL+taSozrDNqCufcx8I8wHjKSk3sm96CvuUqeARBcWvGKYnjo+U8RY6tjpkU03V4Q8Tcq+H3+eHtT8pRSjY88EVv7/+T66JbqfjtfxDYH966Wc2/qFuO2IYOQB2StTl5Rfv9H33C2sZcivxn4iga0fizJg="
     private val chzzk = ChzzkBuilder().withAuthorization(nidAUT, nidSES).build()
